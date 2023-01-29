@@ -1,0 +1,99 @@
+.movie-card {
+    display: flex;
+    width: 454px;
+    height: 280px;
+    box-shadow: 0 4px 12px 0 #00000026;
+}
+
+.movie-img {
+    height: 100%;
+}
+
+.movie-description {
+    width: 100%;
+    padding: 12px 9px 12px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.movie-description ul:last-child {
+    margin-top: auto;
+    font-size: 14px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-title {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 190px;
+}
+
+.movie-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border: 2px solid #E90000;
+    border-radius: 50%;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.movie-rate.bad {
+    border: 2px solid #E97E00;
+}
+
+.movie-rate.ok {
+    border: 2px solid #E9D100;
+}
+
+.movie-rate.good {
+    border: 2px solid #66E900;
+}
+
+.movie-release-date {
+    color: #827E7E;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.movie-genre {
+    color: #000000A6;
+    background-color: #FAFAFA;
+    border: 1px solid #D9D9D9;
+    height: 20px;
+    border-radius: 2px;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    padding: 2px 4px 3px;
+}
+
+.movie-overview {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    max-height: 88px;
+    overflow: hidden;
+}
