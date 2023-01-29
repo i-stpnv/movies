@@ -31,7 +31,6 @@ export default class App extends Component {
         loading: false,
         currentPage: res.page,
         totalPages: res.total_pages,
-        currentQuery: 'green',
       })
     })
     this.tmdbApi.getGenres().then((genres) => {
