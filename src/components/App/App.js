@@ -17,7 +17,7 @@ export default class App extends Component {
     error: false,
     currentPage: null,
     totalPages: null,
-    currentQuery: null,
+    currentQuery: 'green',
     genres: null,
   }
 
@@ -25,7 +25,7 @@ export default class App extends Component {
     this.tmdbApi.createGuestSession().then((s) => {
       localStorage.setItem('guestSessionID', s.guest_session_id)
     })
-    this.tmdbApi.searchMovies('green').then((res) => {
+    this.tmdbApi.searchMovies(this.state.currentQuery).then((res) => {
       this.setState({
         movies: res.results,
         loading: false,
