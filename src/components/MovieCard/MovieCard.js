@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { format } from 'date-fns'
 import { Rate } from 'antd'
 
-import { GenresContext } from '../GenresContext/GenresContext'
+import { GenresContext } from '../../GenresContext'
 import noPosterPic from '../../assets/no_poster_pic.jpg'
 import './MovieCard.css'
 
@@ -49,7 +49,7 @@ export default class MovieCard extends Component {
               )}
               <div className="movie-overview">{overview.length > 140 ? overview.slice(0, 140) + '...' : overview}</div>
               <Rate
-                value={myRate ? myRate : this.state.myRate}
+                value={this.state.myRate ? this.state.myRate : myRate}
                 allowClear={true}
                 allowHalf={true}
                 count={10}

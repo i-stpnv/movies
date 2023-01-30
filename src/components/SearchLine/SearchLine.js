@@ -4,11 +4,13 @@ import { debounce } from 'lodash'
 import './SearchLine.css'
 
 export default class SearchLine extends Component {
+  debounceSearch = debounce(this.props.onSearch, 1500)
+
   render() {
     return (
       <input
         className="search-line"
-        onChange={(e) => debounce(this.props.onSearch, 2000)(e.target.value)}
+        onChange={(e) => this.debounceSearch(e.target.value)}
         placeholder="Type to search..."
       />
     )

@@ -21,7 +21,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "format": "prettier --write ./src"
+    "format": "prettier --write ./src",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +42,12 @@
       "last 1 safari version"
     ]
   },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "npm run lint:fix",
+      "npm run format"
+    ]
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^8.29.0",
@@ -51,6 +58,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.1"
   }
 }
