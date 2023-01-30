@@ -1,29 +1,31 @@
 .App {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin: 0 auto;
-    padding: 32px;
-    max-width: 1010px;
-    background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1010px;
+  background-color: #fff;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .error-wrapper,
 .spin-wrapper {
-    margin: 20px;
-    padding: 30px 50px;
-    text-align: center;
+  margin: 20px;
+  padding: 30px 50px;
+  text-align: center;
 }
 
-.error-wrapper .ant-alert-message { font-size: 18px; }
+.error-wrapper .ant-alert-message {
+  font-size: 18px;
+}
 
 .ant-pagination {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }

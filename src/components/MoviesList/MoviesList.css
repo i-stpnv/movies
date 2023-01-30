@@ -1,5 +1,5 @@
 .movies-list {
-    display: flex;
-    gap: 36px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
 }
